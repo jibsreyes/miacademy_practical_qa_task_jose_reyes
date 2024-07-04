@@ -26,7 +26,11 @@ namespace miacademy_practical_qa_task_jose_reyes.tests
         [SetUp]
         public void Setup()
         {
+            // Initialize ChromeDriver
             driver = new ChromeDriver();
+            
+            // Maximize the browser window
+            driver.Manage().Window.Maximize();
         }
 
         [Test]

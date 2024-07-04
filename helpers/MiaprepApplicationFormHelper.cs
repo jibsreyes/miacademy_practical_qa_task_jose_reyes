@@ -77,7 +77,7 @@ namespace miacademy_practical_qa_task_jose_reyes.helpers
         public static string GenerateRandomFutureDate()
         {
             Random random = new Random();
-            int daysInFuture = random.Next(14, 90);
+            int daysInFuture = random.Next(14, 60);
             DateTime futureDate = DateTime.Today.AddDays(daysInFuture);
             return futureDate.ToString("dd-MMM-yyyy");
         }
